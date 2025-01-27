@@ -1,0 +1,27 @@
+---
+import Card from "./Card.astro";
+---
+
+<div class="bg-gray-900 flex items-center justify-start bg-[url('https://flowbite.s3.amazonaws.com/docs/jumbotron/hero-pattern-dark.svg')] h-screen">
+    <div class="py-8 px-4 mx-20 max-w-screen-xl text-left lg:py-16 z-10 relative">
+        <h1 class="mb-4 text-4xl font-extrabold tracking-tight leading-none text-pC4 md:text-5xl lg:text-8xl">Porfolio</h1>
+        <div class="flex items-center my-4 min-h-4 static">
+          <p id="typewriter" class="mb-8 text-lg font-normal text-pC1 lg:text-4xl"></p>
+        </div>
+        <div class="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
+            <Card
+            imageSrc="https://images.pexels.com/photos/1181467/pexels-photo-1181467.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+            title="Noteworthy technology acquisitions 2021"
+            description="Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order."
+            link="#"
+            />
+            
+            <Card
+            imageSrc="https://images.pexels.com/photos/1025328/pexels-photo-1025328.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+            title="Tech Industry Innovations"
+            description="Explore the latest trends in technology that are reshaping industries."
+            link="#"
+            />
+        </div>
+    </div>
+</div>

@@ -2,6 +2,10 @@
 import Layout from '../layouts/Layout.astro';
 import Sidebar from "../components/Sidebar.astro"
 import Me from '../components/Me.astro'
+import Proyects from '../components/Proyects.astro'
+import Education from '../components/Education.astro'
+import Skills from '../components/Skills.astro'
+import Contact from '../components/Contact.astro';
 
 import '@fontsource-variable/pixelify-sans';
 
@@ -9,24 +13,24 @@ import '@fontsource-variable/pixelify-sans';
 
 <Layout>
 	<Sidebar/>
-	<main class=" ml-[256px] font-pixelify">
+	<main class=" md:ml-[256px] font-pixelify">
 		<section id="diego">
-			<Me></Me>
+			<Me/>
 		</section>
 		<section id="about">
 			<Me></Me>
 		</section>
 		<section id="porfolio">
-			<Me></Me>
+			<Proyects/>
 		</section>
 		<section id="education">
-			<Me></Me>
+			<Education/>
 		</section>
 		<section id="skills">
-			<Me></Me>
+			<Skills/>
 		</section>
 		<section id="contact">
-			<Me></Me>
+			<Contact/>
 		</section>
 	</main>
 	<script type="module" src="/src/scripts/NavBar.js"></script>

@@ -1,0 +1,25 @@
+<button
+  class="flex items-center gap-2 text-pC4 bg-blue-600 hover:bg-blue-700 px-10 py-3 cursor-pointer shadow-[0px_5px_black,0px_-5px_black,5px_0px_black,-5px_0px_black,0px_10px_rgba(0,0,0,0.22),5px_5px_rgba(0,0,0,0.22),-5px_5px_rgba(0,0,0,0.22),inset_0px_5px_rgba(255,255,255,0.21)] active:translate-y-1 active:shadow-[0px_5px_black,0px_-5px_black,5px_0px_black,-5px_0px_black,inset_0px_5px_rgba(0,0,0,0.22)]"
+  onclick="downloadPDF()"
+>
+  <!-- Ícono de descarga -->
+  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-download">
+    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+    <path d="M4 17v2a2 2 0 0 0 2 2h12a2 2 0 0 0 2 -2v-2" />
+    <path d="M7 11l5 5l5 -5" />
+    <path d="M12 4l0 12" />
+  </svg>
+  <span>Download CV</span>
+</button>
+
+<script>
+  function downloadPDF() {
+    const pdfURL = "/CV_Diego_Lopez_Niembro-english.pdf"; // Ruta actualizada
+    const link = document.createElement("a");
+    link.href = pdfURL;
+    link.download = "CV_Diego-López_Niembro.pdf";
+    link.click();
+  }
+</script>
+
+  

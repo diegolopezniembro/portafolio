@@ -10,9 +10,10 @@ export default {
 		extend: {
 			colors: {
 				'pC1': '#000957',
-				'pC2': '#3E47A3',
-				'pC3': '#577BC1',
+				'pC2': '#1d4ed8',
+				'pC3': '#06b6d4',
 				'pC4': '#FFEB00',
+				'pC5': '#111827',	
 			},
 			fontFamily: {
 				pixelify: ['Pixelify Sans Variable', ...defaultTheme.fontFamily.sans],

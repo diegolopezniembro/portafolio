@@ -1,0 +1,10 @@
+---
+const { text, color, textColor, icon } = Astro.props;
+---
+
+<span
+  class="text-xs font-medium me-2 px-2.5 py-0.5 rounded-sm"
+  style={`background-color: ${color}; color: ${textColor};`}
+>
+  {text}
+</span>
